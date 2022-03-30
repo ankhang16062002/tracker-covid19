@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>covid 19 api</title>
+
+    <!-- poppins font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- boxicons -->
+    <link rel="stylesheet" href="./static//boxicons/css/boxicons.min.css">
+    <!-- css gird  -->
+    <link rel="stylesheet" href="./static/gird.css">
+    <!-- main css  -->
+    <link rel="stylesheet" href="./static/style.css">
+
+</head>
+<body>
+    
+    <!-- start header  -->
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="#" class="header-logo">C<i class='bx bxs-virus-block bx-spin'></i>vid tracker</a>
+                <div class="header-darkmode">
+                    <span class="header-toggle">
+                        <span class="icon">
+                            <i class='bx bxs-sun header-toggle-sun'></i>
+                            <i class='bx bxs-moon header-toggle-moon'></i>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header  -->
+
+    <!-- start content covid 19  -->
+    <main>
+        <div class="container">
+            <!-- start content search  -->
+            <div class="row">
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box content-search">
+                        <div class="search-info">
+                            <span class="search-name">global</span>
+                            <i class='bx bx-chevron-down search-icon'></i>
+                        </div>
+                        <ul class="box search-list">
+                            <input type="text" class="search-input" placeholder="Type to search country...">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end content search  -->
+
+            <!-- start content info  -->
+            <div class="row">
+                <!-- start content info left  -->
+                <div class="col-8 col-md-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-4 col-md-4 col-sm-12">
+                            <div class="content-left-status box box-hover">
+                                <span class="status-icon confirmed">
+                                    <i class='bx bxs-virus'></i>
+                                </span>
+                                <div class="status-total confirmed">
+                                    <span></span>
+                                    <span>confirmed</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 col-md-4 col-sm-12">
+                            <div class="content-left-status box box-hover">
+                                <span class="status-icon recovered">
+                                    <i class='bx bxs-smile'></i>
+                                </span>
+                                <div class="status-total recovered">
+                                    <span></span>
+                                    <span>recovered</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 col-md-4 col-sm-12">
+                            <div class="content-left-status box box-hover">
+                                <span class="status-icon deaths">
+                                    <i class='bx bxs-smile'></i>
+                                </span>
+                                <div class="status-total deaths">
+                                    <span></span>
+                                    <span>deaths</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- start all times chart  -->
+                        <div class="col-12">
+                            <div class="box">
+                                <h4 class="box-header">all times</h4>
+                                <div class="all-times-chart-wrapper">
+                                    <div class="all-times-chart"></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- end all times chart  -->
+
+                        <!-- start video about covid  -->
+                        <div class="col-6 col-md-6 col-sm-12">
+                            <div class="box">
+                                <h4 class="box-header">what is covid 19?</h4>
+                                <div class="content-left-video">
+                                    <iframe src="https://www.youtube.com/embed/D9tTi-CDjDU" title="YouTube video player"
+                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-6 col-sm-12">
+                            <div class="box">
+                                <h4 class="box-header">how to protect yourself?</h4>
+                                <div class="content-left-video">
+                                    <iframe src="https://www.youtube.com/embed/bprvVKHbRiE" title="YouTube video player"
+                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- end video about covid  -->
+                    </div>
+                </div>
+                <!-- end content info left  -->
+
+                <!-- start content info right  -->
+                <div class="col-4 col-md-12 col-sm-12">
+                    <div class="row">
+                        <!--start last 30 day charts  -->
+                        <div class="col-12">
+                            <div class="box">
+                                <h4 class="box-header">last 30 days</h4>
+                                <div class="last-30-days-chart-wrapper">
+                                    <div class="last-30-days-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end last 30 day charts  -->
+
+                        <!--start recovery charts  -->
+                        <div class="col-12">
+                            <div class="box">
+                                <h4 class="box-header">recovred rate</h4>
+                                <div class="death-rate-chart-wrapper">
+                                    <div class="death-rate-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end recovery charts  -->
+
+                        <!--start top country table  -->
+                        <div class="col-12">
+                            <div class="box">
+                                <h4 class="box-header">top countries affected</h4>
+                                <table class="top-affected-table">
+                                    <thead>
+                                        <tr>
+                                            <th>country</th>
+                                            <th>confirmed</th>
+                                            <th>recovered</th>
+                                            <th>deaths</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>viet name</td>
+                                            <td>30,302,303</td>
+                                            <td>14</td>
+                                            <td>123,455</td>
+                                        </tr>
+                                        <tr>
+                                            <td>viet name</td>
+                                            <td>30,302,303</td>
+                                            <td>14</td>
+                                            <td>123,455</td>
+                                        </tr>
+                                        <tr>
+                                            <td>viet name</td>
+                                            <td>30,302,303</td>
+                                            <td>14</td>
+                                            <td>123,455</td>
+                                        </tr>
+                                        <tr>
+                                            <td>viet name</td>
+                                            <td>30,302,303</td>
+                                            <td>14</td>
+                                            <td>123,455</td>
+                                        </tr>
+                                        <tr>
+                                            <td>viet name</td>
+                                            <td>30,302,303</td>
+                                            <td>14</td>
+                                            <td>123,455</td>
+                                        </tr>
+                                        <tr>
+                                            <td>viet name</td>
+                                            <td>30,302,303</td>
+                                            <td>14</td>
+                                            <td>123,455</td>
+                                        </tr>
+                                        <tr>
+                                            <td>viet name</td>
+                                            <td>30,302,303</td>
+                                            <td>14</td>
+                                            <td>123,455</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!--end top contries table  -->
+
+                    </div>
+                </div>
+                <!-- end content info right  -->
+            </div>
+            <!-- end content info  -->
+        </div>
+    </main>
+    <!-- end content covid 19  -->
+
+    <!-- start footer covid  -->
+    <footer>
+        <div class="container">
+            <div class="about-me">
+                <p class="create-by">Created by <span>Vương An Khang</span> D20 PTIT</p>
+                <p class="contact-email">Contact me with email: <a href="mailto:vuongankhang1606@gmail.com">vuongankhang1606@gmail.com</a></p>
+                <p class="date-project">Date: 28/03/2022</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer covid  -->
+
+    <!-- start loader  -->
+    <div class="loader isLoading">
+        <i class='bx bxs-virus-block bx-spin'></i>
+    </div>
+    <!-- end loader  -->
+
+    <!-- overlay -->
+    <div class="overlay"></div>
+    <!-- end overlay  -->
+
+    <!-- apexchart.js  -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- custom javascript  -->
+    <script src="./js/covidApi.js" type="module"></script>
+    <script src="./js/fetchApi.js" type="module"></script>
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>
